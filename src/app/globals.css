@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-skbm-gray-dark antialiased;
+  font-family: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+}
+
+.gradient-hero {
+  background: radial-gradient(circle at top left, rgba(31, 138, 112, 0.18), transparent 50%),
+    radial-gradient(circle at top right, rgba(27, 94, 158, 0.18), transparent 45%);
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-semibold text-skbm-navy;
+}
+
+.section-subtitle {
+  @apply text-skbm-gray max-w-2xl;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-card border border-skbm-gray-light;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full bg-skbm-gray-light px-3 py-1 text-xs font-medium text-skbm-gray-dark;
+}
+
+.chip {
+  @apply inline-flex items-center rounded-full border border-skbm-green-light px-3 py-1 text-xs font-semibold text-skbm-green-light;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-skbm-green px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-skbm-green-light;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-full border border-skbm-blue px-5 py-3 text-sm font-semibold text-skbm-blue transition hover:bg-skbm-blue hover:text-white;
+}
+
+.input {
+  @apply w-full rounded-xl border border-skbm-gray-light px-4 py-3 text-sm text-skbm-gray-dark placeholder:text-skbm-gray focus:border-skbm-green focus:outline-none focus:ring-2 focus:ring-skbm-green/20;
+}
+
+.label {
+  @apply text-xs font-semibold uppercase tracking-wide text-skbm-gray;
+}
